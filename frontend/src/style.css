@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+	font-family: 'Silkscreen', cursive;
+	margin: 0;
+	padding: 0;
+}
+
+#calculator{
+	position:absolute;
+	left: calc(50% - 14rem);
+	top: calc(50% - 20rem);
+	background-color: rgb(12,0,36);
+	border-radius: 50px;
+	width: fit-content;
+	padding: 4rem;
+}
+
+
+#display,#old{
+	background-color: rgba(213,0,62,1);
+	color: white;
+	text-align: right;
+	padding: 10px;
+	font-weight: 900;
+	font-size: 1.2rem;
+}
+
+#display{
+	border-radius: 0px 0px 5px 5px;
+}
+
+#old{
+	border-radius: 5px 5px 0px 0px;
+}
+
+#buttons{
+	display: grid;
+	grid-template-columns: repeat(4,5rem);
+	margin-top: 1rem;
+}
+
+button{
+	color:white;
+	font-size: 1.2rem;
+	height: 5rem;
+	margin:4px;
+	border: 1px solid white;
+	background-color: rgb(12,0,36);
+	border-radius: 10px;
+}
+
+button:hover{
+	background-color: rgb(12,0,65);
+}
+
+#span{
+	grid-column: 3/5;
+}
+
+
+/* 
+#blank{
+	opacity: 0;
+} */
