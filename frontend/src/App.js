@@ -41,8 +41,13 @@ function App() {
 					setValueTop(`${topDisplay}${botDisplay}=`);
 				}
 			} else if (topDisplay !== "0"){
-				setValueBot(`${eval(`${topDisplay}${botDisplay}`)}`);
-				setValueTop(`${topDisplay}${botDisplay}=`);
+				if (topDisplay.endsWith("=")){
+					setValueTop("0");
+					return
+				} else{
+					setValueBot(`${eval(`${topDisplay}${botDisplay}`)}`);
+					setValueTop(`${topDisplay}${botDisplay}=`);
+				}
 			}
 		} else{
 			if (evaluated){
